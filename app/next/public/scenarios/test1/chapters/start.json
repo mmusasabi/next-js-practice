@@ -1,0 +1,34 @@
+{
+  "title": "プロローグ",
+  "load_option": [
+    {"music_play": "bgm.mp3"},
+    {"background": "bg.jpg"}
+  ],
+  "play": [
+    {"text": "今日集まってもらったの他でもない。"},
+    {"text": "君たちには異変を解決してもらいたいのだ"},
+    {"text": "街が凄い異変に包まれていて大変なので"},
+    {"text": "君たちに解決してもらいたい。"},
+    {"text": "頼んだぞ", "option": [{"se_play": "busi.mp3"}]},
+    {"select": "aisatu", "choice": []},
+    {"text": "では、改めて、頼んだぞ"},
+    {"ending": "A"}
+  ],
+
+  "select": {
+    "aisatu": {
+      "0": [
+        {"text": "お、良い返事だな！頼もしいことだ！"}
+      ],
+      "1": [
+        {"text": "貴様ら！上官を無視するとは何事だ！"},
+        {"ending": "B"}
+      ]
+    }
+  },
+
+  "ending": {
+    "A": {"jump_capter": "01"},
+    "B": {"jump_capter": "bad_end_1"}
+  }
+}

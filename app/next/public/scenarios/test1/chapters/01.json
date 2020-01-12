@@ -1,0 +1,19 @@
+{
+  "title": "色々あってくりあ",
+  "load_option": [
+    {"music_play": "bgm.mp3"},
+    {"background": "bg.jpg"}
+  ],
+  "play": [
+    {"text": "君たちのおかげで世界は救われた！ありがとう！"},
+    {"text": "おわり"},
+
+    {"finish": ""}
+  ],
+
+  "select": {
+  },
+
+  "ending": {
+  }
+}

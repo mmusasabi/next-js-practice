@@ -1,0 +1,25 @@
+{
+  "title": "上官反逆エンド",
+  "load_option": [
+    {"music_play": "bgm.mp3"},
+    {"background": "bg.jpg"}
+  ],
+  "play": [
+    {"text": "今日集まってもらったの他でもない。"},
+    {"text": "君たちには異変を解決してもらいたいのだ"},
+    {"text": "街が凄い異変に包まれていて大変なので"},
+    {"text": "君たちに解決してもらいたい。"},
+    {"text": "頼んだぞ", "option": [{"se_play": "busi.mp3"}]},
+    {"select": "aisatu", "choice": []},
+    {"text": "では、改めて、頼んだぞ"},
+    {"text": "おわり"},
+
+    {"finish": ""}
+  ],
+
+  "select": {
+  },
+
+  "ending": {
+  }
+}
