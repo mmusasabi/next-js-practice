@@ -4,6 +4,7 @@ import { withRedux } from '../lib/redux'
 import useInterval from '../lib/useInterval'
 import Clock from '../components/clock'
 import Counter from '../components/counter'
+import CounterB from '../components/counterB'
 
 const IndexPage = () => {
   // Tick the time every second
@@ -19,6 +20,7 @@ const IndexPage = () => {
     <>
       <Clock />
       <Counter />
+      <CounterB />
     </>
   )
 }

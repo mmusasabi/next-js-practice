@@ -1,13 +1,11 @@
-import { createStore, applyMiddleware } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension'
-
 const initialState = {
   lastUpdate: 0,
   light: false,
   count: 0,
 }
 
-const reducer = (state = initialState, action) => {
+// reducer
+export default (state = initialState, action) => {
   switch (action.type) {
     case 'TICK':
       return {
@@ -33,12 +31,4 @@ const reducer = (state = initialState, action) => {
     default:
       return state
   }
-}
-
-export const initializeStore = (preloadedState = initialState) => {
-  return createStore(
-    reducer,
-    preloadedState,
-    composeWithDevTools(applyMiddleware())
-  )
 }

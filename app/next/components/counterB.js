@@ -2,29 +2,29 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 const useCounter = () => {
-  const count = useSelector(state => state.counter.count)
+  const count = useSelector(state => state.counterB.count)
   const dispatch = useDispatch()
   const increment = () =>
     dispatch({
-      type: 'INCREMENT',
+      type: 'INCREMENT_B',
     })
   const decrement = () =>
     dispatch({
-      type: 'DECREMENT',
+      type: 'DECREMENT_B',
     })
   const reset = () =>
     dispatch({
-      type: 'RESET',
+      type: 'RESET_B',
     })
   return { count, increment, decrement, reset }
 }
 
-const Counter = () => {
+export default () => {
   const { count, increment, decrement, reset } = useCounter()
   return (
     <div>
       <h1>
-        Count: <span>{count}</span>
+        CountB: <span>{count}</span>
       </h1>
       <button onClick={increment}>+1</button>
       <button onClick={decrement}>-1</button>
@@ -32,5 +32,3 @@ const Counter = () => {
     </div>
   )
 }
-
-export default Counter
